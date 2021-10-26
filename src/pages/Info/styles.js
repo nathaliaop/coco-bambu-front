@@ -2,11 +2,11 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 10vh;
+    height: 100vh;
     font-family: 'MontSerrat', sans-serif;
     font-size: 12px;
 `;
@@ -18,5 +18,5 @@ export const Label = styled.label`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.2rem;
+    padding: 2rem;
 `;
