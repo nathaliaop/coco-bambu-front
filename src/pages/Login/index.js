@@ -29,7 +29,7 @@ const Login = () => {
             localStorage.setItem('id', id);
             localStorage.setItem('name', name);
             localStorage.setItem('email', email);
-            { is_admin ? history.push('/users') : history.push('/info') }
+            {history.push(is_admin ? '/users' : '/info')}
         })
         .catch(error => {
             console.error(error);

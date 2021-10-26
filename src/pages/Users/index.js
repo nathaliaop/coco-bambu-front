@@ -9,13 +9,13 @@ const Users = () => {
 
     let history = useHistory();
 
-
     const registerUser = async (e) => {
         history.push('/register')
     }
 
     const logout = async (e) => {
-        history.push('/login')
+        localStorage.removeItem('token')
+        history.push('/')
     }
 
     useEffect(() => {
