@@ -10,8 +10,12 @@ const Users = () => {
     let history = useHistory();
 
 
-    const sendMessage = async (e) => {
+    const registerUser = async (e) => {
         history.push('/register')
+    }
+
+    const logout = async (e) => {
+        history.push('/login')
     }
 
     useEffect(() => {
@@ -42,7 +46,8 @@ const Users = () => {
           <h1>Carregando!</h1>
         )
         }
-        <Button onClick={ sendMessage }>Cadastrar novo usuario</Button>
+        <Button onClick={ registerUser }>Cadastrar novo usuario</Button>
+        <Button onClick={ logout }>Sair do sistema</Button>
         </>
     );
 }
